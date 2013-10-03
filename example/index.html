@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>jquery/odysseus - by Wouter Vroege</title>
+    <meta charset="utf-8"/>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/jquery.htmlClean.min.js"></script>
+    <script src="../jquery.odysseus.js"></script>
+    <link rel="stylesheet" href="../jquery.odysseus.css"/>
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        font-family: "Vollkorn";
+        outline: none;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: #d4145a;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-family: "Open Sans";
+        font-weight: 900;
+        margin: 0 0 10px 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: #333;
+      }
+
+      #document-container {
+        width: 650px;
+        margin: 35px auto;
+      }
+
+      .inline-block {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      article {
+        font-size: 22px;
+        line-height: 1.3;
+        font-weight: 100;
+        color: #333;
+      }
+
+      ul#doc-actions {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        margin-top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+       ul#doc-actions li:hover {
+        color: #d4145a;
+      }
+
+      .imagePlaceholder {
+        width: 600px;
+        height: 325px;
+        background: #eee;
+        margin-bottom: 20px;
+      }
+
+      .imagePlaceholderSmall {
+        width: 150px;
+        height: 150px;
+        margin-left: 80px;
+        margin-bottom: 10px;
+      }
+
+      [contenteditable='true'].empty {
+        color: #ccc;
+      }
+
+    </style>
+
+    <script>
+    $(document).ready(function() {
+      $().odysseus();
+    });
+    </script>
+
+  </head>
+  <body>
+    <div id="document-container">
+        <main class="inline-block">
+          <h1 id="doc-title" contenteditable="plaintext-only" class="input-field" data-placeholder="Title">Jquery Odysseus plugin</h1>
+          <h3 id="doc-title" contenteditable="plaintext-only" class="input-field" data-placeholder="Written by">by Wouter Vroege</h3>
+          <article class="doc-textarea" contenteditable="true" class="input-field" data-placeholder="Body text">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+            <p>
+            Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            <p>
+            Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          </article>
+        </main>
+    </div>
+  </body>
+</html>
