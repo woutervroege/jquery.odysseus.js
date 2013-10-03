@@ -138,7 +138,7 @@
       '<a class="ody-style ody-style-strikethrough"><s>S</s></a>' +
       '<a class="ody-format ody-format-h2">H2</a>' +
       '<a class="ody-format ody-format-h3">H3</a>' +
-      '<a class="ody-format ody-format-link"><img src="../images/link.png"></a>' +
+      '<a class="ody-format ody-format-link">&#60;a&#62;</a>' +
       '<input type="text" id="ody-selection-link" placeholder="type in a link"/>' +
       '</div>' +
       '</div>'
