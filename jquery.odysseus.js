@@ -91,6 +91,7 @@
 
   function exec(cmd, two, three) {
     document.execCommand(cmd, false, three || null);
+    activateStylingbarBoxes();
   }
 
   function insertHTML(elementName) {
@@ -148,7 +149,7 @@
   function initStylingBar() {
     $("#ody-stylingBar a").attr("href", "javascript:void(0);");
     $("#ody-stylingBar a.ody-style-bold").click(function () {
-      exec('bold');
+      exec('Bold');
     });
     $("#ody-stylingBar a.ody-style-italic").click(function () {
       exec('Italic');
@@ -199,6 +200,30 @@
         scrollLeft: 0,
       }, 10)
       .show();
+
+      var currentSelection = window.getSelection();
+      var parentElement = window.getSelection().getRangeAt(0).startContainer.parentElement;
+      console.log();
+      activateStylingbarBoxes();
+  }
+
+  function activateStylingbarBoxes() {
+        if(document.queryCommandState("Bold"))
+          $("#ody-stylingBar").find(".ody-style-bold").addClass("active");
+        else
+          $("#ody-stylingBar").find(".ody-style-bold").removeClass("active");
+        if(document.queryCommandState("Italic"))
+          $("#ody-stylingBar").find(".ody-style-italic").addClass("active");
+        else
+          $("#ody-stylingBar").find(".ody-style-italic").removeClass("active");
+        if(document.queryCommandState("Underline"))
+          $("#ody-stylingBar").find(".ody-style-underline").addClass("active");
+        else
+          $("#ody-stylingBar").find(".ody-style-underline").removeClass("active");
+        if(document.queryCommandState("StrikeThrough"))
+          $("#ody-stylingBar").find(".ody-style-strikethrough").addClass("active");
+        else
+          $("#ody-stylingBar").find(".ody-style-strikethrough").removeClass("active");
   }
 
   function showLinkBox() {

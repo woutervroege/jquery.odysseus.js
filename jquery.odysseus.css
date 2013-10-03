@@ -19,7 +19,7 @@ odysseus style sheet
   z-index: 99;
   height: 40px;
   display: none;
-  width: 272px;
+  width: #fcf61apx;
   overflow:hidden;
 }
 
@@ -54,8 +54,8 @@ odysseus style sheet
   height:16px;
 }
 
-#ody-stylingBar a:hover {
-  color: #dddddd;
+#ody-stylingBar a.active {
+  color: hsla(334,85%,52%,0.9);
 }
 
 #ody-selection-link {
