@@ -220,7 +220,7 @@
       processImage(images[i], function (data) {
         var img = $('<img src="' + data + '"/>');
         img.load(function () {
-          $(container).append($(img));
+          $(container).html($(img));
           numProcessed++;
           if (numProcessed == n) {
             $(container).animate({

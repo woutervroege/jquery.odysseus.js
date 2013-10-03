@@ -83,6 +83,21 @@
         color: #ccc;
       }
 
+      .ody-image-placeholder {
+        width: 100%;
+        min-height: 300px;
+        background: #eee;
+        cursor: pointer;
+      }
+      .ody-image-placeholder:hover {
+        background: #ddd;
+      }
+      .ody-image-placeholder:active {
+        background: #ccc;
+      }
+      .ody-image-placeholder img {
+        width: 100%;
+      }
     </style>
 
     <script>
@@ -95,6 +110,7 @@
   <body>
     <div id="document-container">
         <main class="inline-block">
+          <div class="ody-image-placeholder"></div>
           <h1 id="doc-title" contenteditable="plaintext-only" class="input-field" data-placeholder="Title">Jquery Odysseus plugin</h1>
           <h3 id="doc-title" contenteditable="plaintext-only" class="input-field" data-placeholder="Written by">by Wouter Vroege</h3>
           <article class="doc-textarea" contenteditable="true" class="input-field" data-placeholder="Body text">
