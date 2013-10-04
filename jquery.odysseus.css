@@ -30,22 +30,6 @@ odysseus style sheet
   width: 700px;
 }
 
-#ody-stylingBar:before {
-  display: block;
-  width: 20px;
-  height: 20px;
-  content: " ";
-  margin-left: 5px;
-  margin-top: 20px;
-  position: absolute;
-  z-index: 10;
-  -webkit-transform: rotate(45deg) scale(0.5);
-  -moz-transform: rotate(45deg) scale(0.5);
-  -o-transform: rotate(45deg) scale(0.5);
-  transform: rotate(45deg) scale(0.5);
-  background-color: #222;
-}
-
 #ody-stylingBar a {
   color: #fff;
   text-decoration: none;
