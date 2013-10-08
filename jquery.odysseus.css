@@ -51,3 +51,8 @@ odysseus style sheet
   font-size: 15px;
   outline: none;
 }
+
+[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: #ccc;
+}
