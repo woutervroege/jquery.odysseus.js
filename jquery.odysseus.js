@@ -46,7 +46,7 @@
   }
 
   function initImagePlaceholders() {
-    $(".ody-image-placeholder").click(function () {
+    $("body").on("click", ".ody-image-placeholder", function() {
       var container = this;
       var fileInput = $('<input type="file" accept="image/*" multiple/>');
       fileInput.bind("change", function (e) {
